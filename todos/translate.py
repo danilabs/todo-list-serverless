@@ -8,9 +8,6 @@ dynamodb = boto3.resource('dynamodb')
 translateaws = boto3.client('translate')
 comprehend = boto3.client('comprehend')
 
-<<<<<<< HEAD
-# test develop branch
-=======
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
@@ -39,7 +36,6 @@ def translateText(data, source, target):
 
 
 # method translate
->>>>>>> 3d47863ab1924ffc253b548ce2b6aeb870c71ef1
 def translate(event, context):
     table = dynamodb.Table(os.environ['DYNAMODB_TABLE'])
     lang = event['pathParameters']['lang']
