@@ -50,7 +50,8 @@ def translate(event, context):
     text = translateText(result['Item']['text'], None, lang)
     r = result['Item']
 
-    r.update({'lang': lang, 'detectedLang': 'auto', 'text': text)
+    r.update({'lang': lang, 'detectedLang': 'auto', 'text': text})
+
     response = {
         "statusCode": 200,
         "body": json.dumps(r, cls=decimalencoder.DecimalEncoder)
