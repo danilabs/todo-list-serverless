@@ -14,6 +14,7 @@ comprehend = boto3.client('comprehend')
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+# check pr
 # method comprehendText
 def comprehendText(data):
     try:
