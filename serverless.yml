@@ -60,7 +60,7 @@ functions:
           method: delete
           cors: true
           
-   translate:
+  translate:
     handler: todos/translate.translate
     events:
       - http:
